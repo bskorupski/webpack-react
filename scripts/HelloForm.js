@@ -1,9 +1,9 @@
-require('../sass/HelloForm.scss');
+import '../sass/HelloForm.scss';
 
-var HelloSayer = require('./HelloSayer');
-var React = require('react');
+import HelloDude from './HelloDude';
+import React, { Component } from 'react';
 
-class HelloForm extends React.Component {
+class HelloForm extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { name: 'world' };
@@ -12,7 +12,7 @@ class HelloForm extends React.Component {
 	render() {
 		return (<div className="hello-form">
 			<input type="text" onChange={this.onChange.bind(this)} />
-			<HelloSayer name={this.state.name} />
+			<HelloDude name={this.state.name} />
 		</div>);
 	}
 

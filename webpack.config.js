@@ -9,8 +9,8 @@ function getEntrySources(sources) {
 
 module.exports = {
     entry: {
-        helloWorld: getEntrySources([
-            './js/helloworld.js'
+        app: getEntrySources([
+            './scripts/helloworld.js'
         ])
     },
     output: {
